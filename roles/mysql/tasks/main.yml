@@ -1,0 +1,6 @@
+---
+- name: Instala MySQL Server
+  apt: name={{ item }} state=present
+  with_items:
+  - mysql-server
+

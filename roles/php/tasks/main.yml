@@ -1,0 +1,21 @@
+---
+- name: Instalacion de php y php5-fpm
+  apt: name={{ item }} state=present
+  with_items:
+  - php5-fpm
+  - php5-cli
+  - php5-mysql
+  - php5-gd
+  - php5-curl
+  - php5-xsl
+  - php5-geoip
+  - php5-ssh2
+  - php5-gmp
+  - php5-imap
+
+- name: Inicia servicio php5-fpm
+  service: name=php5-fpm state=running enabled=yes
+
+- name: Copia archivo de configuracion nginx para sitio default
+  template: src=default dest=/etc/nginx/sites-available/default
+  notify: restart nginx

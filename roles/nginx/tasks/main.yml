@@ -1,0 +1,6 @@
+---
+# Instalacion de nginx para raspberry pi
+- name: Instalacion de nginx
+  apt: name={{ item }} state=present
+  with_items:
+  - nginx
