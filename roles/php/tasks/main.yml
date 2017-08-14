@@ -12,6 +12,7 @@
   - php5-ssh2
   - php5-gmp
   - php5-imap
+  - phpmyadmin
 
 - name: Inicia servicio php5-fpm
   service: name=php5-fpm state=running enabled=yes
