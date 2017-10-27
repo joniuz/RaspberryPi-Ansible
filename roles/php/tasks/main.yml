@@ -17,6 +17,9 @@
 - name: Inicia servicio php5-fpm
   service: name=php5-fpm state=running enabled=yes
 
+- name: Genera link simbolico para phpmyadmin
+  file: src=/usr/share/phpmyadmin dest=/var/www/html/db owner=root group=root state=link
+
 - name: Copia archivo de configuracion nginx para sitio default
   template: src=default dest=/etc/nginx/sites-available/default
   notify: restart nginx
