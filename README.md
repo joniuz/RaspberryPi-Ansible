@@ -1,5 +1,7 @@
 # RaspberryPi-Ansible
-Colección de scripts Ansible que permiten la instalación de una Raspberry Pi - IoT Server desde cero
+Colección de scripts Ansible que permiten la instalación de una Raspberry Pi - IoT Server desde cero.
+
+Los scripts estan actualizados para la versión Raspbian Stretch.
 
 ## Instalación
 Para instalar los pasos son:
@@ -22,7 +24,7 @@ git clone https://github.com/internetdelascosas/RaspberryPi-Ansible.git
 
 ## Ejecutar
 
-Para ejecutar el playbook raspberrypi.yml que instala nginx, php, php5-fpm y mysql-server hay que entrar en la carpeta donde quedó el repositorio clonado y luego ejecutar el comando ansible-playbook con sudo tal como se muestra en las siguientes líneas.
+Para ejecutar el playbook raspberrypi.yml que instala nginx, php, php7.0-fpm y mysql-server hay que entrar en la carpeta donde quedó el repositorio clonado y luego ejecutar el comando ansible-playbook con sudo tal como se muestra en las siguientes líneas.
 
 cd RaspberryPi-Ansible
 
