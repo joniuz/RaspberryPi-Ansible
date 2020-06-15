@@ -1,7 +1,7 @@
 # RaspberryPi-Ansible
 Colección de scripts Ansible que permiten la instalación de una Raspberry Pi - IoT Server desde cero.
 
-Los scripts estan actualizados para la versión Raspbian Stretch.
+Los scripts estan actualizados para la versión Raspbian 10 Buster.
 
 ## Instalación
 Para instalar los pasos son:
